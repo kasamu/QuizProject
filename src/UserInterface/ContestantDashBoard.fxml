@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="800.0" prefWidth="1000.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17">
+   <children>
+      <HBox layoutY="-1.0" prefHeight="59.0" prefWidth="838.0">
+         <children>
+            <Button id="Previous" fx:id="Previous" mnemonicParsing="false" prefHeight="60.0" prefWidth="163.0" text="Previous">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <Button id="Foward" fx:id="Forward" layoutX="837.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="163.0" text="Foward">
+         <font>
+            <Font name="Comic Sans MS Bold" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
