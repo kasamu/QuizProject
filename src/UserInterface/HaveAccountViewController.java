@@ -3,13 +3,11 @@ package UserInterface;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+import application.FmxlPageLoader;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.event.ActionEvent;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.control.*;
-import javafx.stage.Stage;
 import javafx.fxml.Initializable;
 
 /*
@@ -20,8 +18,10 @@ import javafx.fxml.Initializable;
 
 public class HaveAccountViewController implements Initializable {
 
-    //@FXML
-    //private AnchorPane AnchorPane;
+    private application.FmxlPageLoader window;
+	
+	//@FXML
+    private AnchorPane AnchorPane;
 
     @FXML
     private Button Register;
@@ -36,43 +36,39 @@ public class HaveAccountViewController implements Initializable {
 	private Button Previous; // Value injected by FXMLLoader
 
 	public void signIn(ActionEvent event) throws IOException {
-		//declare haveAccountView and connect it.
-		FXMLLoader loader = new FXMLLoader();
-		loader.setLocation(getClass().getResource("/SignInView.fxml"));
-		Parent signInView = loader.load();
-				
-		//getting the controller for the have account scene
-		SignInViewController controller = loader.getController();		
-				
-		//set scene
-		Scene signInViewScene = new Scene(signInView);
-				
-		//set and print stage
-		Stage primaryStage = new Stage();
-		primaryStage.setScene(signInViewScene);
-		primaryStage.show();
+		//change the scene
+		window = new FmxlPageLoader("SignInView.fxml");
+		window.setPrimaryStage();
 	}
 	
 	public void register(ActionEvent event) throws IOException {
-		//declare haveAccountView and connect it.
-		FXMLLoader loader = new FXMLLoader();
-		loader.setLocation(getClass().getResource("/SignInView.fxml"));
-		Parent registerView = loader.load();
-				
-		//getting the controller for the have account scene
-		//RegisterViewController controller = loader.getController();		
-				
-		//set scene
-		Scene registerViewScene = new Scene(registerView);
-				
-		//set and print stage
-		Stage primaryStage = new Stage();
-		primaryStage.setScene(registerViewScene);
-		primaryStage.show();
+		
+		//change the scene
+		window = new FmxlPageLoader("RegisterView.fxml");
+		window.setPrimaryStage();
 	}
+	
+	public void previous(ActionEvent event) throws IOException {
+		
+		//go to the previous scene
+		window.getBackFile();
+		window.setPrimaryStage();
+	}
+	
+	public void forward(ActionEvent event) throws IOException {
+		
+		//go to the next scene
+		window.getForwardFile();
+		window.setPrimaryStage();
+		
+	}
+	
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
-		// TODO Auto-generated method stub
+		
+		//initialise window.
+		window = new FmxlPageLoader();
+	
 		
 	}
 

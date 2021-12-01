@@ -8,92 +8,119 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" fx:id="AnchorPane" prefHeight="800.0" prefWidth="1000.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17">
-   <children>
-      <Label layoutX="146.0" layoutY="99.0" prefHeight="56.0" prefWidth="464.0" text="Quiz Trivial.">
-         <font>
-            <Font name="Calibri Bold" size="36.0" />
-         </font>
-      </Label>
-      <TextField id="Name" fx:id="Name" layoutX="408.0" layoutY="178.0" prefHeight="48.0" prefWidth="376.0">
-         <font>
-            <Font name="Arial" size="18.0" />
-         </font>
-      </TextField>
-      <Label layoutX="173.0" layoutY="169.0" prefHeight="56.0" prefWidth="235.0" text="Name (First and Last only)">
-         <font>
-            <Font name="Arial" size="18.0" />
-         </font>
-      </Label>
-      <Button id="RegisterMe" fx:id="RegisterMe" layoutX="629.0" layoutY="571.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="177.0" text="Register" textFill="#4c5fc7">
-         <font>
-            <Font name="Arial" size="24.0" />
-         </font>
-      </Button>
-      <TextField id="Email" fx:id="Email" layoutX="408.0" layoutY="259.0" prefHeight="48.0" prefWidth="376.0" promptText="example@quiztrivial.com">
-         <font>
-            <Font name="Arial" size="18.0" />
-         </font>
-      </TextField>
-      <Label layoutX="173.0" layoutY="250.0" prefHeight="56.0" prefWidth="235.0" text="Email Address">
-         <font>
-            <Font name="Arial" size="18.0" />
-         </font>
-      </Label>
-      <TextField id="Password1" fx:id="Password1" accessibleRole="PASSWORD_FIELD" layoutX="408.0" layoutY="336.0" prefHeight="48.0" prefWidth="376.0">
-         <font>
-            <Font name="Arial" size="18.0" />
-         </font>
-      </TextField>
-      <Label layoutX="173.0" layoutY="327.0" prefHeight="56.0" prefWidth="235.0" text="Password">
-         <font>
-            <Font name="Arial" size="18.0" />
-         </font>
-      </Label>
-      <TextField id="password2" fx:id="Password2" accessibleRole="PASSWORD_FIELD" layoutX="408.0" layoutY="422.0" prefHeight="48.0" prefWidth="376.0">
-         <font>
-            <Font name="Arial" size="18.0" />
-         </font>
-      </TextField>
-      <Label layoutX="173.0" layoutY="490.0" prefHeight="56.0" prefWidth="325.0" text="Are you an instructor or a contestant?">
-         <font>
-            <Font name="Arial" size="18.0" />
-         </font>
-      </Label>
-      <CheckBox id="instructor" fx:id="Instructor" layoutX="514.0" layoutY="497.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="122.0" text="Instructor">
-         <font>
-            <Font name="Arial" size="18.0" />
-         </font>
-      </CheckBox>
-      <CheckBox id="Contestant" fx:id="Contestant" layoutX="651.0" layoutY="497.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="133.0" text="Contestant">
-         <font>
-            <Font name="Arial" size="18.0" />
-         </font>
-      </CheckBox>
-      <Label layoutX="173.0" layoutY="414.0" prefHeight="56.0" prefWidth="235.0" text="Password (again)">
-         <font>
-            <Font name="Arial" size="18.0" />
-         </font>
-      </Label>
-      <Label id="Message" fx:id="Message" alignment="TOP_LEFT" layoutX="173.0" layoutY="658.0" prefHeight="48.0" prefWidth="631.0" textFill="#eb1010" wrapText="true">
-         <font>
-            <Font name="Arial Bold" size="15.0" />
-         </font>
-      </Label>
-      <HBox layoutX="1.0" prefHeight="59.0" prefWidth="813.0">
-         <children>
-            <Button id="Previous" fx:id="Previous" mnemonicParsing="false" prefHeight="59.0" prefWidth="168.0" text="Previous">
-               <font>
-                  <Font name="Comic Sans MS Bold" size="18.0" />
-               </font>
-            </Button>
-         </children>
-      </HBox>
-      <Button id="Foward" fx:id="Forward" layoutX="815.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="187.0" text="Foward">
-         <font>
-            <Font name="Comic Sans MS Bold" size="18.0" />
-         </font>
-      </Button>
-   </children>
+<AnchorPane id="AnchorPane" fx:id="AnchorPane"
+	prefHeight="800.0" prefWidth="1000.0"
+	xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="UserInterface.RegisterViewController">
+	<children>
+		<Label layoutX="146.0" layoutY="99.0" prefHeight="56.0"
+			prefWidth="464.0" text="Quiz Trivial.">
+			<font>
+				<Font name="Calibri Bold" size="36.0" />
+			</font>
+		</Label>
+		<TextField id="Name" fx:id="Name" layoutX="408.0"
+			layoutY="178.0" prefHeight="48.0" prefWidth="376.0">
+			<font>
+				<Font name="Arial" size="18.0" />
+			</font>
+		</TextField>
+		<Label layoutX="173.0" layoutY="169.0" prefHeight="56.0"
+			prefWidth="235.0" text="Name (First and Last only)">
+			<font>
+				<Font name="Arial" size="18.0" />
+			</font>
+		</Label>
+		<Button id="RegisterMe" fx:id="RegisterMe" layoutX="629.0"
+			layoutY="571.0" mnemonicParsing="false" prefHeight="48.0"
+			prefWidth="177.0" text="Register" textFill="#4c5fc7">
+			<font>
+				<Font name="Arial" size="24.0" />
+			</font>
+		</Button>
+		<TextField id="Email" fx:id="Email" layoutX="408.0"
+			layoutY="259.0" prefHeight="48.0" prefWidth="376.0"
+			promptText="example@quiztrivial.com">
+			<font>
+				<Font name="Arial" size="18.0" />
+			</font>
+		</TextField>
+		<Label layoutX="173.0" layoutY="250.0" prefHeight="56.0"
+			prefWidth="235.0" text="Email Address">
+			<font>
+				<Font name="Arial" size="18.0" />
+			</font>
+		</Label>
+		<TextField id="Password1" fx:id="Password1"
+			accessibleRole="PASSWORD_FIELD" layoutX="408.0" layoutY="336.0"
+			prefHeight="48.0" prefWidth="376.0">
+			<font>
+				<Font name="Arial" size="18.0" />
+			</font>
+		</TextField>
+		<Label layoutX="173.0" layoutY="327.0" prefHeight="56.0"
+			prefWidth="235.0" text="Password">
+			<font>
+				<Font name="Arial" size="18.0" />
+			</font>
+		</Label>
+		<TextField id="password2" fx:id="Password2"
+			accessibleRole="PASSWORD_FIELD" layoutX="408.0" layoutY="422.0"
+			prefHeight="48.0" prefWidth="376.0">
+			<font>
+				<Font name="Arial" size="18.0" />
+			</font>
+		</TextField>
+		<Label layoutX="173.0" layoutY="490.0" prefHeight="56.0"
+			prefWidth="325.0" text="Are you an instructor or a contestant?">
+			<font>
+				<Font name="Arial" size="18.0" />
+			</font>
+		</Label>
+		<CheckBox id="instructor" fx:id="Instructor" layoutX="514.0"
+			layoutY="497.0" mnemonicParsing="false" prefHeight="42.0"
+			prefWidth="122.0" text="Instructor">
+			<font>
+				<Font name="Arial" size="18.0" />
+			</font>
+		</CheckBox>
+		<CheckBox id="Contestant" fx:id="Contestant" layoutX="651.0"
+			layoutY="497.0" mnemonicParsing="false" prefHeight="42.0"
+			prefWidth="133.0" text="Contestant">
+			<font>
+				<Font name="Arial" size="18.0" />
+			</font>
+		</CheckBox>
+		<Label layoutX="173.0" layoutY="414.0" prefHeight="56.0"
+			prefWidth="235.0" text="Password (again)">
+			<font>
+				<Font name="Arial" size="18.0" />
+			</font>
+		</Label>
+		<Label id="Message" fx:id="Message" alignment="TOP_LEFT"
+			layoutX="173.0" layoutY="658.0" prefHeight="48.0" prefWidth="631.0"
+			textFill="#eb1010" wrapText="true">
+			<font>
+				<Font name="Arial Bold" size="15.0" />
+			</font>
+		</Label>
+		<HBox layoutX="1.0" prefHeight="59.0" prefWidth="813.0">
+			<children>
+				<Button id="Previous" fx:id="Previous"
+					mnemonicParsing="false" onAction="#previous" prefHeight="59.0"
+					prefWidth="168.0" text="Previous">
+					<font>
+						<Font name="Comic Sans MS Bold" size="18.0" />
+					</font>
+				</Button>
+			</children>
+		</HBox>
+		<Button id="Foward" fx:id="Forward" layoutX="815.0"
+			mnemonicParsing="false" onAction="#forward" prefHeight="59.0"
+			prefWidth="187.0" text="Foward">
+			<font>
+				<Font name="Comic Sans MS Bold" size="18.0" />
+			</font>
+		</Button>
+	</children>
 </AnchorPane>

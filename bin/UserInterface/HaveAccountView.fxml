@@ -6,41 +6,58 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" fx:id="AnchorPane" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UserInterface.HaveAccountViewController">
-   <children>
-      <Label alignment="CENTER" layoutX="231.0" layoutY="180.0" prefHeight="152.0" prefWidth="539.0" text="Do you have an account with us?">
-         <font>
-            <Font name="Calibri Light" size="36.0" />
-         </font>
-      </Label>
-      <Label alignment="CENTER" layoutX="265.0" layoutY="302.0" prefHeight="43.0" prefWidth="472.0" text="Sign In if yes otherwise click Register.">
-         <font>
-            <Font name="Arial" size="24.0" />
-         </font>
-      </Label>
-      <Button id="SignIn" fx:id="SignIn" layoutX="265.0" layoutY="446.0" mnemonicParsing="false" onAction="#signIn" prefHeight="50.0" prefWidth="197.0" text="Sign In." textFill="#4c5fc7">
-         <font>
-            <Font name="Calibri" size="24.0" />
-         </font>
-      </Button>
-      <Button id="Register" fx:id="Register" layoutX="540.0" layoutY="446.0" mnemonicParsing="false" onAction="#register" prefHeight="50.0" prefWidth="197.0" text="Register" textFill="#4c5fc7">
-         <font>
-            <Font size="24.0" />
-         </font>
-      </Button>
-      <HBox layoutX="1.0" prefHeight="59.0" prefWidth="813.0">
-         <children>
-            <Button id="Previous" fx:id="Previous" mnemonicParsing="false" prefHeight="60.0" prefWidth="163.0" text="Previous">
-               <font>
-                  <Font name="Comic Sans MS Bold" size="18.0" />
-               </font>
-            </Button>
-         </children>
-      </HBox>
-      <Button id="Foward" fx:id="Forward" layoutX="814.0" layoutY="1.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="187.0" text="Foward">
-         <font>
-            <Font name="Comic Sans MS Bold" size="18.0" />
-         </font>
-      </Button>
-   </children>
+<AnchorPane id="AnchorPane" fx:id="AnchorPane"
+	prefHeight="800.0" prefWidth="1000.0"
+	xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="UserInterface.HaveAccountViewController">
+	<children>
+		<Label alignment="CENTER" layoutX="231.0" layoutY="180.0"
+			prefHeight="152.0" prefWidth="539.0"
+			text="Do you have an account with us?">
+			<font>
+				<Font name="Calibri Light" size="36.0" />
+			</font>
+		</Label>
+		<Label alignment="CENTER" layoutX="265.0" layoutY="302.0"
+			prefHeight="43.0" prefWidth="472.0"
+			text="Sign In if yes otherwise click Register.">
+			<font>
+				<Font name="Arial" size="24.0" />
+			</font>
+		</Label>
+		<Button id="SignIn" fx:id="SignIn" layoutX="265.0"
+			layoutY="446.0" mnemonicParsing="false" onAction="#signIn"
+			prefHeight="50.0" prefWidth="197.0" text="Sign In."
+			textFill="#4c5fc7">
+			<font>
+				<Font name="Calibri" size="24.0" />
+			</font>
+		</Button>
+		<Button id="Register" fx:id="Register" layoutX="540.0"
+			layoutY="446.0" mnemonicParsing="false" onAction="#register"
+			prefHeight="50.0" prefWidth="197.0" text="Register"
+			textFill="#4c5fc7">
+			<font>
+				<Font size="24.0" />
+			</font>
+		</Button>
+		<HBox layoutX="1.0" prefHeight="59.0" prefWidth="813.0">
+			<children>
+				<Button id="Previous" fx:id="Previous"
+					mnemonicParsing="false" onAction="#previous" prefHeight="60.0"
+					prefWidth="163.0" text="Previous">
+					<font>
+						<Font name="Comic Sans MS Bold" size="18.0" />
+					</font>
+				</Button>
+			</children>
+		</HBox>
+		<Button id="Foward" fx:id="Forward" layoutX="814.0"
+			layoutY="1.0" mnemonicParsing="false" onAction="#forward"
+			prefHeight="59.0" prefWidth="187.0" text="Foward">
+			<font>
+				<Font name="Comic Sans MS Bold" size="18.0" />
+			</font>
+		</Button>
+	</children>
 </AnchorPane>

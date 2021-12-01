@@ -35,29 +35,9 @@ public class HomeViewController implements Initializable{
 	
 	
 	public void click(ActionEvent event) throws IOException {
-		
-		/*application.FmxlPageLoader page = new FmxlPageLoader();
-		
-		page.setFileUrl("HaveAccountView.fxml");
-		page.setRoot();
-		page.setScene();
-		
-		*/
-		//declare haveAccountView and connect it.
-		FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(getClass().getResource("HaveAccountView.fxml"));
-		Parent haveAccountView = loader.load();
-		
-		//getting the controller for the have account scene
-		HaveAccountViewController controller = loader.getController();		
-		
-		//set scene
-		Scene haveAccountViewScene = new Scene(haveAccountView);
-		
-		//set and print stage
-		Stage primaryStage = new Stage();
-		primaryStage.setScene(haveAccountViewScene);
-		primaryStage.show();
+		//change the scene
+		application.FmxlPageLoader window = new FmxlPageLoader("HaveAccountView.fxml");
+		window.setPrimaryStage();
 		
 	}
 	
@@ -67,6 +47,8 @@ public class HomeViewController implements Initializable{
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
 		
+		//contestant;
+		//instructor;
 		
 	}
 	
