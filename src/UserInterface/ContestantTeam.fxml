@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="722.0" prefWidth="698.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="77.0" layoutY="88.0" prefHeight="56.0" prefWidth="452.0" text="Team Registration.">
+         <font>
+            <Font name="SansSerif Bold" size="36.0" />
+         </font>
+      </Label>
+      <TextField id="CompetitionId" fx:id="CompetitionId" layoutX="291.0" layoutY="359.0" prefHeight="48.0" prefWidth="376.0">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </TextField>
+      <Label id="TeamToken" fx:id="TeamToken" alignment="CENTER" layoutX="56.0" layoutY="350.0" prefHeight="56.0" prefWidth="235.0" text="Team Token">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+      <TextField id="TeamId" fx:id="TeamId" layoutX="289.0" layoutY="278.0" prefHeight="48.0" prefWidth="376.0">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </TextField>
+      <Label alignment="CENTER" layoutX="54.0" layoutY="285.0" prefHeight="56.0" prefWidth="235.0" text="Team ID">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="67.0" layoutY="198.0" prefHeight="80.0" prefWidth="584.0" text="Enter team ID and token to join a team or click create to create a new team." wrapText="true">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+      <Button id="join" fx:id="Join" layoutX="500.0" layoutY="515.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="165.0" text="Join">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Button>
+      <Label id="Message" fx:id="Message" layoutX="77.0" layoutY="432.0" prefHeight="56.0" prefWidth="590.0" textFill="#f80d0d" wrapText="true">
+         <font>
+            <Font name="Arial" size="16.0" />
+         </font>
+      </Label>
+      <Button id="Create" fx:id="Create" layoutX="234.0" layoutY="515.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="139.0" text="Create">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="77.0" layoutY="515.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="139.0" text="View.">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

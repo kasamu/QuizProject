@@ -20,7 +20,7 @@ public class HaveAccountViewController implements Initializable {
 
     private application.FmxlPageLoader window;
 	
-	//@FXML
+	@FXML
     private AnchorPane AnchorPane;
 
     @FXML

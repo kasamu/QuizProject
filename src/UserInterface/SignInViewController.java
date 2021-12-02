@@ -52,7 +52,27 @@ public class SignInViewController implements Initializable{
 		window.setPrimaryStage();
 		
 	}
+	
+	public void logIn(ActionEvent event)throws IOException{
+		
+		//declare varables
+		boolean valid = true; //set to false;
+		
+		//check that the account is valid as either an instructor or contestant
+		
+		if(valid) {
+			window = new FmxlPageLoader("ContestantDashBoard.fxml");
+			window.setPrimaryStage();
+		}else {
+			message(event);
+		}
+	}
 
+	public void message(ActionEvent event)throws IOException{
+		
+		//set the text to the meassage sent from the account
+		Message.setText("!! Wrong Password");
+	}
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
 

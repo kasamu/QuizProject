@@ -9,76 +9,57 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" fx:id="AnchorPane"
-	maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
-	minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0"
-	xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
-	fx:controller="UserInterface.SignInViewController">
+<AnchorPane id="AnchorPane" fx:id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UserInterface.SignInViewController">
 	<children>
-		<VBox layoutX="300.0" layoutY="100.0" prefHeight="487.0"
-			prefWidth="400.0">
+		<VBox layoutX="300.0" layoutY="100.0" prefHeight="487.0" prefWidth="400.0">
 			<children>
-				<Label alignment="BOTTOM_CENTER" prefHeight="99.0"
-					prefWidth="502.0" text="Quiz  Trivial." textAlignment="CENTER"
-					textFill="#0e1d54">
+				<Label alignment="BOTTOM_CENTER" prefHeight="99.0" prefWidth="502.0" text="Quiz  Trivial." textAlignment="CENTER" textFill="#0e1d54">
 					<font>
 						<Font name="Arial Bold" size="36.0" />
 					</font>
 				</Label>
-				<Label alignment="BOTTOM_LEFT" prefHeight="96.0"
-					prefWidth="404.0" text="User ID:">
+				<Label alignment="BOTTOM_LEFT" prefHeight="96.0" prefWidth="404.0" text="User ID:">
 					<font>
 						<Font name="Arial Bold" size="18.0" />
 					</font>
 				</Label>
-				<TextField id="UserId" fx:id="UserId" prefHeight="53.0"
-					prefWidth="400.0" promptText="example@quiztrivial.com">
+				<TextField id="UserId" fx:id="UserId" prefHeight="53.0" prefWidth="400.0" promptText="example@quiztrivial.com">
 					<font>
 						<Font name="Arial" size="18.0" />
 					</font>
 				</TextField>
-				<Label alignment="BOTTOM_LEFT" prefHeight="81.0"
-					prefWidth="400.0" text="Password:">
+				<Label alignment="BOTTOM_LEFT" prefHeight="81.0" prefWidth="400.0" text="Password:">
 					<font>
 						<Font name="Arial Bold" size="18.0" />
 					</font>
 				</Label>
-				<PasswordField id="Password" fx:id="Password"
-					prefHeight="55.0" prefWidth="400.0">
+				<PasswordField id="Password" fx:id="Password" prefHeight="55.0" prefWidth="400.0">
 					<font>
 						<Font name="Arial" size="18.0" />
 					</font>
 				</PasswordField>
 			</children>
 		</VBox>
-		<Button id="LogIn" fx:id="LogIn" layoutX="541.0"
-			layoutY="535.0" mnemonicParsing="false" prefHeight="46.0"
-			prefWidth="159.0" text="Sign In" textFill="#4c5fc7">
+		<Button id="LogIn" fx:id="LogIn" layoutX="541.0" layoutY="535.0" mnemonicParsing="false" onAction="#logIn" prefHeight="46.0" prefWidth="159.0" text="Sign In" textFill="#4c5fc7">
 			<font>
 				<Font size="24.0" />
 			</font>
 		</Button>
-		<Label id="Message" fx:id="Message" alignment="TOP_LEFT"
-			layoutX="162.0" layoutY="624.0" prefHeight="53.0" prefWidth="682.0"
-			textFill="#b90404" wrapText="true">
+		<Label id="Message" fx:id="Message" alignment="TOP_LEFT" layoutX="162.0" layoutY="624.0" prefHeight="53.0" prefWidth="682.0" textFill="#b90404" wrapText="true">
 			<font>
 				<Font size="15.0" />
 			</font>
 		</Label>
 		<HBox prefHeight="59.0" prefWidth="813.0">
 			<children>
-				<Button id="Previous" fx:id="Previous"
-					mnemonicParsing="false" onAction="#previous" prefHeight="60.0"
-					prefWidth="163.0" text="Previous">
+				<Button id="Previous" fx:id="Previous" mnemonicParsing="false" onAction="#previous" prefHeight="60.0" prefWidth="163.0" text="Previous">
 					<font>
 						<Font name="Comic Sans MS Bold" size="18.0" />
 					</font>
 				</Button>
 			</children>
 		</HBox>
-		<Button id="Foward" fx:id="Forward" layoutX="813.0"
-			layoutY="1.0" mnemonicParsing="false" onAction="#forward"
-			prefHeight="59.0" prefWidth="187.0" text="Foward">
+		<Button id="Foward" fx:id="Forward" layoutX="813.0" layoutY="1.0" mnemonicParsing="false" onAction="#forward" prefHeight="59.0" prefWidth="187.0" text="Foward" visible="false">
 			<font>
 				<Font name="Comic Sans MS Bold" size="18.0" />
 			</font>

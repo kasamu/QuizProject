@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="722.0" prefWidth="698.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox layoutX="102.0" layoutY="162.0" prefHeight="425.0" prefWidth="549.0">
+         <children>
+            <Label id="Message1" fx:id="Message1" prefHeight="60.0" prefWidth="561.0" text="This is going to be some buch of information." wrapText="true">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label id="Message2" fx:id="Message2" prefHeight="60.0" prefWidth="561.0" text="This is going to be some buch of information." wrapText="true">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label id="Message3" fx:id="Message3" prefHeight="60.0" prefWidth="561.0" text="This is going to be some buch of information." wrapText="true">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label id="Message4" fx:id="Message4" prefHeight="60.0" prefWidth="561.0" text="This is going to be some buch of information." wrapText="true">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label id="Message5" fx:id="Message5" prefHeight="60.0" prefWidth="561.0" text="This is going to be some buch of information." wrapText="true">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label id="Message6" fx:id="Message6" prefHeight="60.0" prefWidth="561.0" text="This is going to be some buch of information." wrapText="true">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Button id="Start" fx:id="Start" layoutX="480.0" layoutY="587.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="136.0" text="Start">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Button>
+      <Circle layoutX="88.0" layoutY="191.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="88.0" layoutY="254.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="88.0" layoutY="497.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="88.0" layoutY="434.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="88.0" layoutY="374.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="88.0" layoutY="314.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="55.0" layoutY="67.0" prefHeight="60.0" prefWidth="561.0" text="Practice Quiz.">
+         <font>
+            <Font name="SansSerif Bold" size="36.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
