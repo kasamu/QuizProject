@@ -33,11 +33,16 @@ public class HomeViewController implements Initializable{
 	@FXML // fx:id="instructor"
 	private Button instructor;
 	
+	@FXML
+	private String person;
+	
 	
 	public void click(ActionEvent event) throws IOException {
 		//change the scene
-		application.FmxlPageLoader window = new FmxlPageLoader("HaveAccountView.fxml");
-		window.setPrimaryStage();
+		if(event.getSource() == contestant) {
+		    application.FmxlPageLoader window = new FmxlPageLoader("HaveAccountView.fxml");
+		    window.setPrimaryStage();
+		}
 		
 	}
 	
