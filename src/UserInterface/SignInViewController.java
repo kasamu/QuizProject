@@ -38,6 +38,7 @@ public class SignInViewController implements Initializable{
 	@FXML // fx:id="Previous"
 	private Button Previous; // Value injected by FXMLLoader
 	
+	
 	public void previous(ActionEvent event) throws IOException {
 		
 		//go to the previous scene
@@ -60,11 +61,13 @@ public class SignInViewController implements Initializable{
 		
 		//check that the account is valid as either an instructor or contestant
 		
-		if(valid) {
+		if(HomeViewController.getPerson() == "contestant") {
 			window = new FmxlPageLoader("ContestantDashBoard.fxml");
 			window.setPrimaryStage();
-		}else {
-			message(event);
+		}
+		else {
+			window = new FmxlPageLoader("QuizSettings.fxml");
+			window.setPrimaryStage();  
 		}
 	}
 

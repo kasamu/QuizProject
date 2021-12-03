@@ -6,7 +6,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane layoutX="1000.0" layoutY="800.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="98.0" prefWidth="244.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Button fx:id="PreviousButton" layoutX="-1003.0" layoutY="-798.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="95.0" text="Previous">
@@ -14,36 +13,36 @@
             <Font size="14.0" />
          </font>
       </Button>
-      <Label alignment="CENTER" layoutX="-631.0" layoutY="-597.0" prefHeight="56.0" prefWidth="174.0" text="Number of Teams">
+      <Label alignment="CENTER" layoutX="-718.0" layoutY="-597.0" prefHeight="56.0" prefWidth="174.0" text="Number of Teams">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <Label layoutX="-627.0" layoutY="-513.0" prefHeight="56.0" prefWidth="183.0" text="Number of Questions: ">
+      <Label layoutX="-703.0" layoutY="-515.0" prefHeight="56.0" prefWidth="183.0" text="Number of Questions: ">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <Label alignment="CENTER" layoutX="-627.0" layoutY="-464.0" prefHeight="63.0" prefWidth="160.0" text="max Marks">
+      <Label alignment="CENTER" layoutX="-707.0" layoutY="-464.0" prefHeight="63.0" prefWidth="160.0" text="max Marks">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <Label alignment="CENTER" layoutX="-627.0" layoutY="-383.0" prefHeight="40.0" prefWidth="139.0" text="Time Limit">
+      <Label alignment="CENTER" layoutX="-700.0" layoutY="-388.0" prefHeight="40.0" prefWidth="139.0" text="Time Limit">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <TextField fx:id="numTeamsTextField" layoutX="-423.0" layoutY="-582.0" prefHeight="47.0" prefWidth="216.0" promptText="Enter the Max numbrer of Teams" />
-      <TextField fx:id="numQuestionsTextField" layoutX="-423.0" layoutY="-511.0" prefHeight="47.0" prefWidth="216.0" promptText="Enter the max Number of Questions" />
-      <TextField fx:id="timeLimitTextField" layoutX="-423.0" layoutY="-376.0" prefHeight="56.0" prefWidth="216.0" promptText="Enter the time limit" />
-      <TextField fx:id="maxPointsTextField" layoutX="-423.0" layoutY="-446.0" prefHeight="47.0" prefWidth="216.0" promptText="Enter the maximum points" />
-      <Button fx:id="applySettingsButton" layoutX="-122.0" layoutY="-57.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="183.0" text="Apply Settiings">
+      <TextField fx:id="numTeamsTextField" layoutX="-478.0" layoutY="-582.0" prefHeight="47.0" prefWidth="216.0" promptText="Enter the Max numbrer of Teams" />
+      <TextField fx:id="numQuestionsTextField" layoutX="-478.0" layoutY="-510.0" prefHeight="47.0" prefWidth="216.0" promptText="Enter the max Number of Questions" />
+      <TextField fx:id="timeLimitTextField" layoutX="-478.0" layoutY="-376.0" prefHeight="56.0" prefWidth="216.0" promptText="Enter the time limit" />
+      <TextField fx:id="maxPointsTextField" layoutX="-478.0" layoutY="-448.0" prefHeight="47.0" prefWidth="216.0" promptText="Enter the maximum points" />
+      <Button fx:id="applySettingsButton" layoutX="-588.0" layoutY="-147.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="183.0" text="Apply Settiings">
          <font>
             <Font size="14.0" />
          </font>
       </Button>
-      <Label fx:id="QuizSettingsLabel" alignment="CENTER" layoutX="-520.0" layoutY="-715.0" prefHeight="92.0" prefWidth="411.0" text="Quiz Settings">
+      <Label fx:id="QuizSettingsLabel" alignment="CENTER" layoutX="-718.0" layoutY="-718.0" prefHeight="92.0" prefWidth="411.0" text="Quiz Settings">
          <font>
             <Font name="System Bold" size="36.0" />
          </font>

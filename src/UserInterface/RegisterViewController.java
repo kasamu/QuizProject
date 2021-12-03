@@ -65,6 +65,13 @@ public class RegisterViewController implements Initializable{
 		
 	}
 	
+    public void register(ActionEvent event)throws IOException{
+		
+		window = new FmxlPageLoader("SignInView.fxml");
+		window.setPrimaryStage();
+		
+	}
+	
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
 		

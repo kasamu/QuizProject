@@ -34,16 +34,27 @@ public class HomeViewController implements Initializable{
 	private Button instructor;
 	
 	@FXML
-	private String person;
+	private static String person;
 	
 	
 	public void click(ActionEvent event) throws IOException {
 		//change the scene
 		if(event.getSource() == contestant) {
+			person = "contestant";
 		    application.FmxlPageLoader window = new FmxlPageLoader("HaveAccountView.fxml");
 		    window.setPrimaryStage();
 		}
 		
+		else if(event.getSource() == instructor){
+			person = "instructor";
+			application.FmxlPageLoader window = new FmxlPageLoader("HaveAccountView.fxml");
+		    window.setPrimaryStage();
+		}
+		
+	}
+	
+	public static String getPerson() {
+		return person;
 	}
 	
 	/*

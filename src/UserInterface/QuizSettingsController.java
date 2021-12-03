@@ -15,6 +15,8 @@ public class QuizSettingsController {
 	 * Sample Skeleton for 'QuizSettings.fxml' Controller Class
 	 */
 
+	   private application.FmxlPageLoader window;
+	
 	    @FXML // fx:id="PreviousButton"
 	    private Button PreviousButton; // Value injected by FXMLLoader
 
@@ -28,7 +30,7 @@ public class QuizSettingsController {
 	    private TextField maxPointsTextField; // Value injected by FXMLLoader
 
 	    @FXML // fx:id="numQuestionsTextField"
-	    private TextField numQuestionsTextField; // Value injected by FXMLLoader
+	    private static TextField numQuestionsTextField; // Value injected by FXMLLoader
 
 	    @FXML // fx:id="numTeamsTextField"
 	    private TextField numTeamsTextField; // Value injected by FXMLLoader
@@ -36,11 +38,19 @@ public class QuizSettingsController {
 	    @FXML // fx:id="timeLimitTextField"
 	    private TextField timeLimitTextField; // Value injected by FXMLLoader
 
+	    private static int totalQuestions;
+
+
 		public void applySettings(ActionEvent event) throws IOException {
 			//change the scene
-			application.FmxlPageLoader window = new FmxlPageLoader("addQuestion.fxml");
+		    window = new FmxlPageLoader("addQuestion.fxml");
 			window.setPrimaryStage();
 			
+		}
+		
+		public static int totalQues() {
+			totalQuestions = Integer.parseInt(numQuestionsTextField.getText());
+			return totalQuestions;
 		}
 
 	
