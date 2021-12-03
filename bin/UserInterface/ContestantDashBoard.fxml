@@ -38,7 +38,7 @@
                         <Insets top="30.0" />
                      </VBox.margin>
 						</FlowPane>
-						<Label id="Name" fx:id="Name" alignment="TOP_CENTER" prefHeight="82.0" prefWidth="300.0" text="FirstName and LastName" wrapText="true">
+						<Label id="Name" fx:id="Name" alignment="TOP_CENTER" prefHeight="82.0" prefWidth="300.0" text="FirstName" wrapText="true">
 							<font>
 								<Font name="Arial Italic" size="20.0" />
 							</font>
